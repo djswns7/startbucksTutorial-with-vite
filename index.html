@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+
+    <link rel="stylesheet" href="./src/CSS/style.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://kit.fontawesome.com/cb059f1086.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-wrapper">
+        <h1 class="logo">
+          <a href="#"><img src="/src/assets/img/rounded-brand-icon.svg" alt="스타벅스" id="rounded-brand-icon" /></a>
+        </h1>
+
+        <nav class="navigator">
+          <h2 class="a11y-hidden">메인 메뉴</h2>
+          <ul class="menu">
+            <li class="menuItem"><a href="#">MENU</a></li>
+            <li class="menuItem"><a href="#">REWARDS</a></li>
+            <li class="menuItem"><a href="#">GIFT CARDS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <ul class="member">
+        <li><a href="#" class="findStore"> Find a Store</a></li>
+        <li><a href="#" class="signIn"> Sign in</a></li>
+        <li><a href="#" class="join">Join now</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="mainTitleWrapper">
+        <h2 class="mainTitle">Starbucks® Rewards</h2>
+      </div>
+      <section class="rewards">
+        <div class="rewardsContents">
+          <h3 class="rewardsContentTitle">FREE COFFEE<br />IS A TAP AWAY</h3>
+          <div class="rewardsContentSub">
+            <div class="rewards-content1">Join now to start earning Rewards.</div>
+            <a href="#" class="greenRound">Join now</a>
+            <div class="rewards-content2">
+              Or
+              <a href="#" class="joinNow">join in the app</a>
+              for the best experience
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="mainContentsWrapper"></div>
+      <!-- start -->
+    </main>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+/* 기본 스타일 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+
+  /* font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif; */
+  font-family: SoDoSans;
+}
+
+/* 숨김 컨텐츠 */
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+body {
+  background-color: #ffffff;
+  /* font-size: 1rem; */
+  /* overflow: hidden; */
+}
+
+h1 {
+  /* width: fit-content; */
+}
+
+a {
+  text-decoration: none;
+  color: #1b1e1d;
+}
+
+header {
+  height: 100px;
+  width: clamp(768px, 96vw, 1440px);
+  margin: 0 auto;
+  /* margin: 0 calc(50vw - 720px) 0 calc(50vw - 720px); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-wrapper {
+  position: relative;
+  margin: auto 0;
+}
+
+h1.logo {
+  position: absolute;
+  top: 25px;
+  left: -90px;
+  width: 51px;
+  height: 51px;
+}
+#rounded-brand-icon {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.member {
+  display: block;
+}
+
+.mainTitleWrapper {
+  background-color: #1e3932;
+
+  width: 100vw;
+  padding: 0 calc((100vw - 1440px) / 2) 0 calc((100vw - 1440px) / 2);
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mainTitle {
+  display: inline-block;
+  line-height: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.rewards {
+  background: url("../assets/img/mainStar.png") no-repeat center/cover;
+  background-color: #d4e9e2;
+  width: 100vw;
+  padding: 0 calc((100vw - 1440px) / 2);
+  height: 810px;
+  overflow: hidden;
+}
+
+.navigator {
+  display: block;
+}
+
+.menu {
+  width: 280px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.menuItem a {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 101px;
+  display: block;
+}
+.menuItem:hover a {
+  color: #00754a;
+}
+
+.menuItem:nth-child(2) a {
+  box-shadow: #00754a 0px -6px 0px 0px inset;
+}
+
+ul.member {
+  display: flex;
+  width: 346px;
+  height: 33px;
+  font-size: 14px;
+  margin: auto 0;
+  line-height: 33px;
+  justify-content: space-between;
+}
+ul.member li {
+  font-weight: 600;
+  margin: auto 0;
+  text-align: center;
+}
+
+.findStore::before {
+  content: ;
+
+  /*<i class="fa-solid fa-location-dot"></i>*/
+  width: 32px;
+  height: 32px;
+}
+
+.findStore {
+  display: inline-block;
+  width: 117px;
+  margin-right: 24px;
+  font-size: 14px;
+}
+
+.findStore:hover {
+  color: #00754a;
+}
+
+.signIn {
+  display: inline-block;
+  border-radius: 50px;
+  border: #000000 solid 1px;
+  width: 80px;
+}
+
+.signIn:hover {
+  background-color: #efefef;
+}
+
+.join {
+  display: inline-block;
+  border-radius: 50px;
+  border: #000000 solid 1px;
+  width: 93px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.join:hover {
+  background-color: #4c4c4c;
+}
+
+.rewardsContents {
+  width: 691px;
+  height: 313px;
+  position: relative;
+  margin-top: 250px;
+}
+
+.rewardsContentTitle {
+  display: inline-block;
+  position: relative;
+  top: 12%;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.rewardsContentSub {
+  display: inline-block;
+  top: 18%;
+  font-size: 19px;
+  position: relative;
+}
+
+.rewards-content1 {
+  width: 691px;
+}
+
+.greenRound {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #00754a;
+  color: #ffffff;
+  width: 102px;
+  height: 35px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 35px;
+  margin-top: 32px;
+}
+
+.rewards-content2 {
+  width: 691px;
+  height: 20px;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+.joinNow {
+  text-decoration-line: underline;
+}
+
+.snowflake {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  /* background-color: white; */
+  background-image: url("../assets/img/snowflake.png");
+  background-size: cover;
+  position: absolute;
+  top: -20px;
+  /* animation: snowFall 10s linear; */
+}
+
+.s {
+  width: 20px;
+  height: 20px;
+  /* border-radius: 4px; */
+  /* color: azure; */
+  background-image: url("../assets/img/snowflake.png");
+  background-size: cover;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  /* animation: snowFall 10s linear; */
+}
+
+@keyframes snowFall {
+  from {
+  }
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
